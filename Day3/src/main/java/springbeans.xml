@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+   
+   
+   <bean id="emp" class="com.jbk.DemoDI.Employee">
+   		<property name="id1" value="9"></property>
+   		<property name="name" value="sumit"></property>
+   		<property name="addr" ref="addr"></property>
+   		
+   		<!-- <constructor-arg name="name1" value="Raokhande"/> 	
+   		<constructor-arg name="id" value="8"/>  -->	
+   	
+   </bean>
+   
+   <bean id="addr" class="com.jbk.DemoDI.Address">
+   		<property name="city" value="Pune"/>
+   		<property name="area" value="Ambegaon"/>
+   </bean>
+   
+   </beans>
